@@ -1,0 +1,125 @@
+/* Importação de fonte via Google Fonts --------- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+:root {
+	--cerise-color: #DB1E8C;
+
+	--carnation-color: #FF97D3;
+
+	--pickled-bluewood-color: #33475B;
+
+	--white-color: #FFFFFF;
+
+	--cornflower-color: #264FEC;
+
+	--main-font:  'IBM Plex Sans', sans-serif;
+ }
+
+
+/* Reset básico --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body --------- */
+body {
+    background-color: #33475B;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Header --------- */
+header {
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.container-elementos-header {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-principal {
+    font-size: 24px;
+    color: #0000EE;
+    font-weight: 400;
+}
+
+.label-pesquisa {
+    background-color: #DB1E8C;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+}
+
+.input-pesquisa {
+    background-color: transparent;
+    padding: 4px;
+    border: none;
+}
+
+::placeholder {
+    color: #FF97D3;
+}
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.trilhas {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 400px;
+	height: 445px;
+	padding: 32px;
+	margin: 20px;
+	border: 2px solid var(--cornflower-color);
+	border-radius: 4px;
+	background-color: var(--white-color);
+}
+
+.trilhas > h1 {
+	color: var(--pickled-bluewood-color);
+	font-size: 24px;
+	margin: 0px 0px 18px;
+}
+
+.trilhas > p {
+	margin: 8px 0px 16px;
+}
+.trilhas > .vazio{
+	flex-grow: 2;
+}
+.trilhas > a {
+	padding: 12px;
+	
+	color: var(--cornflower-color);
+	text-align:center;
+	text-decoration: none;
+
+	border-radius: 4px;
+	border: 2px solid var(--cornflower-color);
+}
+footer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+
+	padding: 8px 64px;
+
+	background-color: var(--white-color) ;
+
+}
+div > img {
+	display: inline-block;
+}
